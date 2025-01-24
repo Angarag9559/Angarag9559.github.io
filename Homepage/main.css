@@ -1,0 +1,50 @@
+/* General styles for all devices */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    width: 100%; /* Makes the header span the full width */
+    background-color: #333; /* Dark background for the header */
+    color: white;
+    padding: 10px 0; /* Space inside the header */
+    text-align: center;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 15px; /* Adds space between buttons */
+    font-size: 18px; /* Makes the text bigger */
+  }
+  
+  header a:hover {
+    color: yellow; /* Changes color when hovering */
+  }
+  
+  section {
+    padding: 60px 20px; /* Space inside each section */
+    margin-top: 50px; /* Prevents content from hiding under the header */
+  }
+  
+  /* Responsive design for smaller screens (phones) */
+  @media (max-width: 600px) {
+    header {
+      display: flex;
+      flex-direction: column; /* Stack the links vertically */
+      padding: 15px 0;
+    }
+  
+    header a {
+      margin: 10px 0; /* Add space between each link */
+      font-size: 16px; /* Slightly smaller text on phones */
+    }
+  
+    section {
+      padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
