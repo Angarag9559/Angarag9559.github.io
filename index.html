@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Responsive Menu</title>
   <link rel="stylesheet" href="main.css"> <!-- Link to external CSS file -->
 </head>
 <body>
   <header>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+    <nav class="sidebar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="about">
@@ -33,5 +36,7 @@
     <h1>Contact</h1>
     <p>Get in touch with me here.</p>
   </section>
+
+  <script src="main.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
