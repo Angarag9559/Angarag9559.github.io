@@ -1,8 +1,30 @@
-.loading{
-  height: 500px;
-  width: 500px;
-  border: 50px;
-  border-color: aqua;
-  position: absolute;
+body{
+  background-color: black;
+}
 
+.loading{
+  height: 50px;
+  width: 50px;
+  border: 5px solid aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 10;
+  animation: 2s ang ease-in-out infinite;
+}
+
+@keyframes ang{
+  0%{
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  33%{
+    transform: rotateX(180deg) rotateY(0) rotateZ(0);
+  }
+  66%{
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+  }
+  100%{
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
 }
